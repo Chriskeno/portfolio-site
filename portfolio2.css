@@ -1,0 +1,304 @@
+    /*   
+Project: portfolio page
+Author: christopher Kennedy
+
+
+/* Reset Browser Defaults*/
+
+* {
+  padding:0;
+  margin: 0;
+}
+
+
+.parallax {
+    /* The image used */
+    background-image: url("../portfolio-site/images/patrick-hendry-background2.png");
+    
+
+    /* Set a specific height */
+    min-height: 800px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overscroll {position: relative; z-index: 1;
+background-color: #ffffff;
+color: darkgray;
+}
+
+.quote {background-color: white;
+color: darkgray;
+padding: 1em;
+padding-top:1em;}
+
+hr {border-color:darkorange;
+width: 70%;
+position: relative;
+left:4em;
+margin: 1em;}
+
+.about-me {background-color: white;
+color: black;
+padding-bottom: 2em;
+padding-left: 5em;
+    padding-right: 5em;
+    
+}
+.about-me h1 {font-weight: 100;
+font-size:1.4em;
+position: relative;
+bottom: .9em;
+color:gray;}
+
+.about-me p {font-size: 
+.6em;
+position: relative;
+    bottom: 1em;
+color:darkgray;
+line-height: 2em;}
+
+/* Typography */
+body {
+   font-family: 'monserrat', sans-serif, serif;
+  font-weight: 100;
+  color: #ffffff;
+   -webkit-font-smoothing: antialiased;
+}
+
+/* monogram and what i do section */
+.monogram {
+z-index: 1;
+position: fixed;
+left: 32em;
+top: 10em;
+}
+
+section h1 {
+display:flex;
+justify-content: center;
+font-size: 2em;
+position: absolute;
+left: 1.5em;
+}
+
+a {text-decoration: none;}
+
+/* button */
+.contact-button {
+    position: fixed;
+    left: 18.1em;
+    top: 14em;
+    color:white;
+    font:"Montserrat";
+    font-weight: 100;
+    font-size:2em;
+    text-align: center;
+    
+    border: solid 2px #ffffff;
+    border-radius: 50px;
+    padding: 10px 50px;
+    
+    -webkit-transition-duration: 200ms;
+}
+
+.contact-button:hover {
+    background-color:rgba(255,255,255,0.2);
+
+}
+
+.contact-button p:hover{color: darkorange;
+-webkit-transition-duration:500ms;}
+/*---- nav---- */
+nav
+{position: fixed;
+    z-index: 2;
+top: 0px;
+    left: 29em;
+    margin: 0;
+    width: 100%;
+   
+        
+}
+
+nav 
+{
+padding: 0.8em 0;
+margin-bottom: 0.8em;
+}
+
+nav ul 
+{text-align: center;
+}
+
+nav ul li 
+{display: inline;
+margin: 0.5em;
+font-family: 'times new roman';
+font-size: 1.2em;}
+
+nav a {text-decoration: none;
+color:darkgray;}
+nav a:hover {color:darkorange;}
+
+/* Portfolio */
+
+.portfolio h1{
+font-weight: 100; position: relative;
+left:0em;
+padding-top:1em;
+color: gray;}
+
+.portfolio{
+  position:relative;
+  width:100%;
+  background:#f3f3f3;
+  z-index:10;
+
+
+}
+
+.portfolio .portfolio-margin{
+  position:relative;
+  width:1000px;
+  overflow:hidden;
+  margin:0 auto;
+}
+
+
+
+.portfolio .portfolio-margin h1{
+  font-size:34px;
+  color:black;
+  text-align:center;
+  margin-top:120px;
+  letter-spacing:6px;
+  font-weight:bold;
+  text-transform:uppercase;
+  line-height:1.2;
+}
+
+
+
+
+/* Portfolio grid */
+
+.grid{
+  margin-top:70px;
+  width:100%;
+  position:relative;
+right: 1.1em;
+  margin-bottom:70px;
+  overflow:hidden;
+background-color: lightgrey;
+background-image:url(../portfolio-site/images/bedge-grunge.png);
+padding-left:2.5em;
+padding-right: 2em;
+    padding-top: 1.5em;
+
+}
+
+.grid li{
+  width:285px;
+  margin:0 15px 15px 0;
+  float: left;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.grid img{
+  width:285px;
+  float: left;
+  position: relative;
+    
+}
+
+.grid .text {
+  position: absolute;
+  width: 285px;
+  height:115%;
+  background: rgba(255,255,257,0.8);
+  z-index: 2;
+  opacity:0;
+    -webkit-transition: all 0.6s ease-in;
+	-moz-transition: all 0.6s ease-in;
+	-ms-transition: all 0.6s ease-in;
+	-o-transition: all 0.6s ease-in;
+	transition: all 0.6s ease-in;
+}
+
+.grid .text:hover {
+  opacity:1;
+}
+
+
+.grid p {
+  font-size: 17px;
+  text-align:center;
+  line-height:26px;
+  margin-top:40px;
+  font-weight: bold;
+  letter-spacing:1px;
+  color:darkorange;
+}
+
+.grid p.description {
+    padding-left:1.2em;
+  font-size: 15px;
+  width:250px;
+  margin-top:20px;
+  text-align:center;
+  line-height:20px;
+  font-weight: 500;
+  color:gray;
+  position:relative;
+}
+
+.services {padding-top: 2em;}
+
+figure {position: relative; left: 8em;
+padding-top: 2em;}
+
+figure.item {
+    /* To correctly align image, regardless of content height: */
+    vertical-align: top;
+    padding-right: 2.5em;
+    display: inline-block;
+    /* To horizontally center images and caption */
+    text-align: center;
+    /* The width of the container also implies margin around the images. */
+    width: 190px;
+}
+
+.caption {
+    /* Make the caption a block so it occupies its own line. */
+    display: block;
+    font-size: .5em;
+    padding-right:0em;
+}
+
+.services p {
+    text-align: center;
+    font-size: 
+.6em;
+position: relative;
+top: 2em;
+color:darkgray;
+line-height: 1.8em;
+padding-left:4em;
+padding-right: 4em;
+padding-bottom: 7em;}
+
+.social {background-color:darkorange;}
+.social li {display: inline;
+position: relative;
+left: 12em;
+}
+.social li img {padding-left: 2em;
+padding-top: .3em;
+padding-bottom: .2em;}
